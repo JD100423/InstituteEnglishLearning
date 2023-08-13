@@ -2,13 +2,15 @@ import React from "react";
 import { styled } from "styled-components";
 import BackImage from '../img/learningimg.jpg';
 import logo from '../img/BKlogoimg.png';
+import AboutUs from "../AboutUs";
+import Testimony from "../Testimony";
 
 const Background = styled.div`
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 65%;
     z-index: -1;
     background-image: url(${BackImage});
     background-size: cover;
@@ -54,6 +56,7 @@ color: #555;
 `;
 const Home = () => {
     return (
+        <>
         <Container>
             <Background/>
             <Content>
@@ -72,6 +75,10 @@ const Home = () => {
                 <LogoImg src={logo} alt="BCK English Instute Logo"/>
             </Logo>
         </Container>
+            <AboutUs/>
+            <Testimony/>
+        
+        </>
     )
 }
 

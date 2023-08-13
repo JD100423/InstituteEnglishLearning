@@ -8,6 +8,8 @@ const Container = styled.div`
     display: flex;
     background-color: #01579B;
     justify-content: center;
+    margin: 0;
+    padding-bottom: 20px;
 `;
 
 const Content = styled.div`

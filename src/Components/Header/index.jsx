@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import logo from '../img/BKlogoimg.png'
+import { Link } from "react-router-dom";
 
 const Container = styled.header`
     background-color: #01579B;
@@ -32,7 +33,7 @@ const Li = styled.li`
     padding: 0;
     margin: 0;
 `;
-const A = styled.a`
+const A = styled(Link)`
     text-decoration: none;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
@@ -54,10 +55,10 @@ const Header = () => {
                 </ImgContainer>
             <Nav>
                 <Ul>
-                    <Li><A href="#">Home</A></Li>
-                    <Li><A href="#">About us</A></Li>
-                    <Li><A href="#">Courses</A></Li>
-                    <Li><A href="#">Contact</A></Li>
+                    <Li><A to="/">Home</A></Li>
+                    <Li><A to="/About">About us</A></Li>
+                    <Li><A to="#">Courses</A></Li>
+                    <Li><A to="#">Contact</A></Li>
                 </Ul>
             </Nav>
         </Container>
