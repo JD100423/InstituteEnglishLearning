@@ -20,14 +20,22 @@ const Title = styled.h1`
 const Content = styled.div`
     align-items: center;
     display: flex;
+@media (max-width: 768px){
+    flex-direction: column;
+}
 `;
 const Card = styled.div`
     max-width: 400px;
     text-align: center;
     margin-left: 10px;
     flex-wrap: wrap;
-    border: 1px solid #1B4F72;
+    border: 1px solid #EAEDED;
+    background-color: #EAEDED;
     border-radius: 10px;
+    @media (max-width: 768px){
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
 `;
 const CardTitle = styled.h2`
     font-family: 'Ubuntu', sans-serif;
@@ -56,21 +64,21 @@ const Testimony = () => {
             <Content>
                 <Card>
                     <CardImg src={Student1}/>
-                    <CardTitle>Taisha Margarita</CardTitle>
+                    <CardTitle>Jacdelin Mercedes Perez</CardTitle>
                     <div style={{margin: "0", borderRadius: "15px", backgroundColor: "#EAEDED"}}>
                     <CardInfo>I love the language English and I decided to study it, I have a friend who recommended to study it in this institution and it was the best option.</CardInfo>
                     </div>
                 </Card>
                 <Card>
                     <CardImg src={Student2}/>
-                    <CardTitle>Johan Alberoni Jimenez</CardTitle>
+                    <CardTitle>Juan M. Castro de Jesus</CardTitle>
                     <div style={{margin: "0", borderRadius: "15px", backgroundColor: "#EAEDED"}}>
                         <CardInfo>In 2017, I had to learn because I got a job and one of requeriments was know English I started learn English in this Instite and was amazin, thanks a lot.</CardInfo>
                     </div>
                 </Card>
                 <Card>
                     <CardImg src={Student3}/>
-                    <CardTitle>Jacdelin Mercedes Tiburcio</CardTitle>
+                    <CardTitle>Anny M. Florian Mendez</CardTitle>
                     <div style={{margin: "0", borderRadius: "15px", backgroundColor: "#EAEDED"}}>
                         <CardInfo>In 2017, I had to learn because I got a job and one of requeriments was know English I started learn English in this Instite and was amazin, thanks a lot.</CardInfo>
                     </div>

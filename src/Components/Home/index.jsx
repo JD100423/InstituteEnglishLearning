@@ -16,12 +16,23 @@ const Background = styled.div`
     background-size: cover;
     background-position: center;
     filter: blur(3px);
+    @media (max-width: 768px){
+        width: 100%;
+        height: 75%;
+    }
 `;
 const Container = styled.div`
     display: flex;
     height: 50vh;
     justify-content: space-evenly;
     align-items: center;
+
+    @media (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-bottom: 10px;
+    }
     `;
 const Content = styled.div`
     display: flex;

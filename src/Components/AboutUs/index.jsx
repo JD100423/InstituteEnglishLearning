@@ -10,11 +10,14 @@ const Container = styled.div`
     justify-content: center;
     margin: 0;
     padding-bottom: 20px;
-`;
+    `;
 
 const Content = styled.div`
     align-items: center;
     display: flex;
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
 `;
 const Title = styled.h1`
     font-family: 'Josefin Sans', sans-serif;
@@ -30,12 +33,15 @@ const Info = styled.div`
     padding: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 500px;
+    max-width: 500px;
     flex-wrap: wrap;
     border: 1px solid #EEEEEE;
     display: flex;
     box-shadow: 0 3px 10px  rgb(21, 30, 37);
     justify-content: center;
+    @media (max-width: 768px){
+        margin-right: 10px;
+    }
 `;
 
 const Infop = styled.p`
